@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advaith's Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/728739f862.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.PNG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Backend Developer</p>
+                <h1>Hi, I'm <span>Advaith Krishna</span><br>From Kerala</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---- --------------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me4.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, I'm Advaith Krishna, a passionate Computer Science Engineering student at Lovely Professional
+                        University with a strong foundation in programming and web development. I specialize as a backend
+                        developer and have worked on several projects, contributing to the design and development of
+                        scalable web applications using technologies such as HTML, CSS, JavaScript, and Django.
+
+                        In addition to my academic work, I am an entrepreneur, having founded WOS Designs, a web
+                        development company that specializes in building custom, user-friendly websites for businesses
+                        looking to enhance their online presence. My dedication to learning new technologies is reflected in
+                        my participation in hackathons, where I develop solutions in fields like AI and satellite data analysis.
+
+                        I'm always eager to take on new challenges, collaborate with others, and contribute meaningfully to
+                         impactful projects.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Backend Development</span><br>Experienced in building scalable backend systems using Django and Flask.</li>
+                            <li><span>Cloud</span><br>Worked with Google Earth Engine (GEE)</li>
+                            <li><span>Problem-Solving</span><br>Gained problem-solving experience through participation in hackathons and AI-based projects.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Founder of WOS Designs</span><br>Started a web development company focused on creating custom, user-friendly websites.</li>
+                            <li><span>Hackathon Participant</span><br>Developed AI-based solutions and tackled real-world problems in various hackathons.</li>
+                            <li><span>Backend Developer</span><br>Built scalable backend systems using Django and Flask for web applications.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Primary School</span><br>LakeFord Public School</li>
+                            <li><span>High School</span><br>Sree Narayana Public School</li>
+                            <li><span>Bachelor of Technology in Computer Science Engineering</span><br>Lovely Professional University (2024 - Present)<br>
+                                Pursuing a degree with a focus on programming, web development, and backend systems.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------services------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend Development</h2>
+                    <p>Proficient in building scalable and efficient backend systems using frameworks like Django and Flask.
+                    Experienced in designing RESTful APIs, managing databases with SQL,
+                    and ensuring smooth data flow between the server and client-side applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>Skilled in creating dynamic and responsive web applications using HTML, CSS, and JavaScript.
+                    Adept at implementing user-friendly interfaces and ensuring cross-browser compatibility,
+                    while also focusing on mobile responsiveness to enhance user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-resolving"></i>
+                    <h2>Problem-Solving</h2>
+                    <p>Strong analytical skills demonstrated through participation in hackathons and AI-based projects. 
+                    Experienced in tackling complex problems, leveraging critical thinking and innovative solutions,
+                    and collaborating effectively in team environments to achieve project goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project3.png" >
+                    <div class="layer">
+                        <h3>Work1 Name</h3>
+                        <p>Describe the work</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project1.jpeg" >
+                    <div class="layer">
+                        <h3>Work2 Name</h3>
+                        <p>Describe the work</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project2.jpeg" >
+                    <div class="layer">
+                        <h3>Work3 Name</h3>
+                        <p>Describe the work</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>advaithnikunjam@gmail.com</p>
+                    <p><a href="tel:+91 9562795628"><i class="fa-solid fa-phone"></i></a>9562795628</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/advaith-krishna-nikunjam?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYA81NN%2FOQuSpRLDZTYgr4g%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/9562795628"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/cv-template.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Advaith.Founder of WOS Designs</p>
+        </div>
+    </div>
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzIaTHNX-oRELtA7ymUlRZKKRBh12oAWsb_2f9lUSNCP70iaIGCJMc2bDRn1X8_Z7QR/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+</body>
+</html>
